@@ -21,12 +21,8 @@ public class NumberHelper
     }
 
     public boolean isOdd() 
-    {
-        // ritorna true se number è un numero dispari, altrimenti ritorna false
-        
+    {        
         boolean controllo = true;
-        
-        
         // ritorna true se number numero pari, altrimenti ritorna false
         if(number % 2 == 0)
             controllo = false;
@@ -64,7 +60,7 @@ public class NumberHelper
         
         boolean controllo = false;
         
-        if(number / n % 2 == 0)
+        if(number % n == 0)
             controllo = true;
         
         return controllo;

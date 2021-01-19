@@ -40,7 +40,8 @@ public class NumberHelperTest {
      * Test of isEven method, of class NumberHelper.
      */
     @Test
-    public void testIsEven() {
+    public void testIsEven() 
+    {
       NumberHelper instance = new NumberHelper(2);
       
         boolean expResult = true;
@@ -52,8 +53,18 @@ public class NumberHelperTest {
     /**
      * Test of isOdd method, of class NumberHelper.
      */
+     @Test
+    public void testIsOdd() 
+    {
+        NumberHelper instance = new NumberHelper(1);
+        boolean expResult = false;
+        boolean result = instance.isOdd();
+        assertEquals(expResult, result);
+    }
+    /*
     @Test
-    public void testIsOdd() {
+    public void testIsOdd() 
+    {
        
         NumberHelper instance = new NumberHelper(1);
         boolean expResult = true;
@@ -62,12 +73,13 @@ public class NumberHelperTest {
         // TODO review the generated test code and remove the default call to fail.
      
     }
-
+*/
     /**
      * Test of sum method, of class NumberHelper.
      */
     @Test
-    public void testSum() {
+    public void testSum() 
+    {
      
         int n = 5;
         NumberHelper instance = new NumberHelper(8);
@@ -77,11 +89,25 @@ public class NumberHelperTest {
        
     }
 
+    /*
+    @Test
+    public void testSum() 
+    {
+     
+        int n = 5;
+        NumberHelper instance = new NumberHelper(8);
+        int expResult = -3;
+        int result = instance.sum(n);
+        assertEquals(expResult, result);
+       
+    }
+    */
     /**
      * Test of isPrime method, of class NumberHelper.
      */
     @Test
-    public void testIsPrime() {
+    public void testIsPrime() 
+    {
         
         NumberHelper instance = new NumberHelper(13);
         boolean expResult = true;
@@ -89,12 +115,23 @@ public class NumberHelperTest {
         assertEquals(expResult, result);
         
     }
-
+    /*
+    @Test
+    public void testIsPrime() 
+    {
+        
+        NumberHelper instance = new NumberHelper(12);
+        boolean expResult = false;
+        boolean result = instance.isPrime();
+        assertEquals(expResult, result);     
+    }
+*/
     /**
      * Test of isDisisibleBy method, of class NumberHelper.
      */
     @Test
-    public void testIsDisisibleBy() {
+    public void testIsDisisibleBy() 
+    {
    
         int n = 3;
         NumberHelper instance = new NumberHelper(12);
@@ -103,5 +140,17 @@ public class NumberHelperTest {
         assertEquals(expResult, result);
        
     }
-    
+    /*
+    @Test
+    public void testIsDisisibleBy() 
+    {
+   
+        int n = 13;
+        NumberHelper instance = new NumberHelper(12);
+        boolean expResult = false;
+        boolean result = instance.isDisisibleBy(n);
+        assertEquals(expResult, result);
+       
+    }
+    */
 }
